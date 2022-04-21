@@ -102,7 +102,29 @@ if __name__ == "__main__":
 
     # 参数说明：num_topics代表想从语料库中提取多少个主题，num_words代表每个主题下的关键字数量
     # 注意这里的num_topics不能大于训练模型时设定的num_topics
+    for topic in model.print_topics(num_topics=5, num_words=5):
+        print(topic[1])
+    print()
+    print()
+    for topic in model.print_topics(num_topics=6, num_words=5):
+        print(topic[1])
+    print()
+    print()
+    for topic in model.print_topics(num_topics=5, num_words=4):
+        print(topic[1])
+    print()
+    print()
     for topic in model.print_topics(num_topics=7, num_words=5):
         print(topic[1])
     print()
+    print()
+    for topic in model.print_topics(num_topics=4, num_words=6):
+        print(topic[1])
+    print()
+    print()
+    for topic in model.print_topics(num_topics=5, num_words=6):
+        print(topic[1])
+    print()
+    print()
+
 
